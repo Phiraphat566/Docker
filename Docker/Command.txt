@@ -1,0 +1,21 @@
+docker ps การดูตัวที่ทำงานอยู่
+docker ps --all ดูทั้งหมดที่เคยทำงาน
+docker run busybox ping google.com คือการรันเช็คว่าสามารถ ping กับ google ได้มั้ยdocker 
+docker run busybox ls คำสั่งลิสต์ florder ของ ตัวลีนุก
+docker stop ไอดีcontariner เพื่อหยุดกรทำงานก
+docker rm ไอดีcontariner เพื่อลบ
+
+docker system prune ค่ำสังตาย สั่งหยุดทุกอย่างที่รันอยู่ (ตายโห่งตายห่า)
+docker exex -it id bash
+
+docker run nginx
+docker run -p 80:80 nginx
+docker run -p 9000:80 nginx
+http://localhost:9000/
+
+docker run --name mynginx -d -p 3000:80 nginx
+docker log 
+
+docker system info
+docker system df
+docker image rm ชื่อ
